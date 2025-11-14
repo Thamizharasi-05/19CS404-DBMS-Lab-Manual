@@ -90,5 +90,137 @@ Reversed number is 5351
 a = 10, b = 9, c = 15  
 Largest of three number is 15
 
+## PROGRAM
+
+## 1. Write a PL/SQL program to find the Greatest of Two Numbers
+
+```
+DECLARE
+    num1 NUMBER;
+    num2 NUMBER;
+BEGIN
+    num1 := &num1;
+    num2 := &num2;
+
+    IF num1 > num2 THEN
+        DBMS_OUTPUT.PUT_LINE('Greater Number: ' || num1);
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Greater Number: ' || num2);
+    END IF;
+END;
+/
+```
+
+## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
+
+```
+DECLARE
+    num NUMBER := 10;
+    sum NUMBER := 0;
+    i   NUMBER := 1;
+BEGIN
+    WHILE i <= num LOOP
+        sum := sum + i;
+        i := i + 1;
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE('Sum of first ' || num || ' natural numbers is: ' || sum);
+END;
+/
+```
+
+## 3. Write a PL/SQL program to generate Fibonacci series
+
+```
+DECLARE
+    n    NUMBER := 1535;
+    temp NUMBER;
+    rem  NUMBER;
+    rev  NUMBER := 0;
+BEGIN
+    temp := n;
+
+    WHILE temp > 0 LOOP
+        rem  := temp MOD 10;
+        rev  := rev * 10 + rem;
+        temp := FLOOR(temp / 10);
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE('n = ' || n);
+    DBMS_OUTPUT.PUT_LINE('Reversed number is ' || rev);
+END;
+/
+```
+
+## 4. Write a PL/SQL Program to display the number in Reverse Order
+
+```
+DECLARE
+    n       NUMBER := 1535;
+    rem     NUMBER;
+    rev     NUMBER := 0;
+    temp    NUMBER;
+BEGIN
+    temp := n;      -- keep original number
+
+    WHILE temp > 0 LOOP
+        rem  := temp MOD 10;         -- extract last digit
+        rev  := rev * 10 + rem;      -- build reversed number
+        temp := FLOOR(temp / 10);    -- remove last digit
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE('n = ' || n);
+    DBMS_OUTPUT.PUT_LINE('Reversed number is ' || rev);
+END;
+/
+
+```
+## 5. Write a PL/SQL program to find the largest of three numbers
+
+```
+DECLARE
+    a NUMBER := 10;
+    b NUMBER := 9;
+    c NUMBER := 15;
+    largest NUMBER;
+BEGIN
+    IF a > b AND a > c THEN
+        largest := a;
+    ELSIF b > a AND b > c THEN
+        largest := b;
+    ELSE
+        largest := c;
+    END IF;
+
+    DBMS_OUTPUT.PUT_LINE('a = ' || a || ', b = ' || b || ', c = ' || c);
+    DBMS_OUTPUT.PUT_LINE('Largest of three number is ' || largest);
+END;
+/
+```
+
+## OUTPUT
+
+## 1. Write a PL/SQL program to find the Greatest of Two Numbers
+
+<img width="1014" height="786" alt="Screenshot 2025-10-31 113507" src="https://github.com/user-attachments/assets/e138d038-720c-4f58-b8b7-cd9aa8d37dd3" />
+
+## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
+
+<img width="997" height="867" alt="Screenshot 2025-10-31 114426" src="https://github.com/user-attachments/assets/b0767de8-3658-4803-b524-ae527893cc23" />
+
+## 3. Write a PL/SQL program to generate Fibonacci series
+
+<img width="995" height="515" alt="Screenshot 2025-10-31 114919" src="https://github.com/user-attachments/assets/4db8efdd-e0e4-4d0b-8576-acd8e2e9d168" />
+<img width="1010" height="274" alt="Screenshot 2025-10-31 115037" src="https://github.com/user-attachments/assets/88bdd794-1bd6-4a4e-accf-5bfcca9b163f" />
+
+## 4. Write a PL/SQL Program to display the number in Reverse Order
+
+<img width="882" height="940" alt="image" src="https://github.com/user-attachments/assets/a964d395-9da6-4bf9-a851-85b7a1732920" />
+
+## 5. Write a PL/SQL program to find the largest of three numbers
+
+<img width="888" height="983" alt="image" src="https://github.com/user-attachments/assets/99216244-5384-4f4e-8835-f4619194b269" />
+
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
+
