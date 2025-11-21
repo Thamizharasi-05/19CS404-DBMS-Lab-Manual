@@ -16,7 +16,7 @@ Types of Explicit Cursors:
 
 1. Simple Cursor: Basic cursor to iterate over multiple rows.
 
-2. Parameterized Cursor: Accepts parameters to filter the result dynamically.
+2. Parameterized Cursor: Acceptsa parameters to filter the result dynamically.
 
 3. Cursor FOR Loop: Simplifies cursor operations (open, fetch, close).
 
@@ -75,11 +75,13 @@ END;
 - Insert some sample data into the table.
 - Use a simple cursor to fetch and display employee names and designations.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
-- The program should display the employee details or an error message.
-
-## OUTPUT
+- 
 
 <img width="1012" height="741" alt="444790997-309cc0ae-38e2-474f-b13b-61f8fd89ba1a" src="https://github.com/user-attachments/assets/c8621073-46c0-4dd8-b6dd-a76d4d39d5ff" />
+
+
+## OUTPUT
+The program should display the employee details or an error message.
 
 ---
 
@@ -96,8 +98,6 @@ END;
 - Insert sample salary values for the employees.
 - Use a parameterized cursor to accept a salary range as input and fetch employees within that range.
 - Implement exception handling to catch and display relevant error messages.
-- The program should display the employee details within the specified salary range or an error message if no data is found.
-
 
 ## PROGRAM
 ```
@@ -124,6 +124,7 @@ END;
 ```
 
 ## OUTPUT 
+The program should display the employee details within the specified salary range or an error message if no data is found.
 
 <img width="1004" height="731" alt="444791111-5a310361-c353-4435-973f-c60771bc3bef" src="https://github.com/user-attachments/assets/d7995fb9-0ac5-4080-a8c9-6a34b9992d7b" />
 
@@ -143,8 +144,6 @@ END;
 - Insert sample department numbers for employees.
 - Use a cursor FOR loop to fetch and display employee names along with their department numbers.
 - Implement exception handling to catch the relevant exceptions.
-- The program should display employee names with their department numbers or the appropriate error message if no data is found.
-
 
 ## PROGRAM
 ```
@@ -167,6 +166,7 @@ END;
 ```
 
 ## OUTPUT
+The program should display employee names with their department numbers or the appropriate error message if no data is found.
 
 <img width="1014" height="733" alt="444791154-941a9de5-183d-4ae0-ae7e-51fd9e6956d7" src="https://github.com/user-attachments/assets/581f2eea-272e-4744-badf-b5beb648aeff" />
 
@@ -185,8 +185,6 @@ END;
 - Insert sample data into the `employees` table.
 - Declare a cursor using `%ROWTYPE` to fetch complete rows from the `employees` table.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
-- The program should display employee records or the appropriate error message if no data is found.
-
 ## PROGRAM
 ```
 DECLARE
@@ -215,6 +213,7 @@ END;
 ```
 
 ## OUTPUT
+The program should display employee records or the appropriate error message if no data is found.
 
 <img width="1000" height="724" alt="444791195-75c2057e-282e-40af-9abf-963cd54625a1" src="https://github.com/user-attachments/assets/78bae146-406a-4b3c-9002-e2f1c5cd80e7" />
 
@@ -233,8 +232,7 @@ END;
 - Insert sample data into the `employees` table with different department numbers.
 - Use a cursor with the `FOR UPDATE` clause to lock the rows of employees in a specific department and update their salary.
 - Implement exception handling to handle `NO_DATA_FOUND` or other errors that may occur.
-- The program should update employee salaries and display a message, or it should display an error message if no data is found.
-
+- 
 ## PROGRAM
 ```
 
@@ -261,6 +259,8 @@ END;
 ```
 
 ## OUTPUT
+The program should update employee salaries and display a message, or it should display an error message if no data is found.
+
 <img width="1008" height="722" alt="444791222-2656ed13-4cef-4a82-a7c9-e9892431f065" src="https://github.com/user-attachments/assets/5781ab3e-13f3-4ea9-9db2-c3379c2aed97" />
 
 
